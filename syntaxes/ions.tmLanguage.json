@@ -23,7 +23,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.ions",
-					"match": "\\b(if|else|else\\*|while|do|break|continue|return|exit|assert)\\b"
+					"match": "\\b(if|else|else\\*|while|do|break|continue|return|exit|assert|#include)\\b"
 				},
 				{
 					"name": "keyword.operator.ions",
@@ -67,7 +67,7 @@
 				},
 				{
 					"name": "variable.other.ions",
-					"match": "\\b[_A-Z][_A-Z0-9]*\\b"
+					"match": "\\b[_A-Z][_A-Z0-9]*(_[a-zA-Z0-9]*)*\\b"
 				}
 			]
 		},
