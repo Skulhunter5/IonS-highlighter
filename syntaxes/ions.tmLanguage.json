@@ -1,0 +1,111 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "IonS",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#chars"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.ions",
+					"match": "\\b(if|else|else\\*|while|do|break|continue|return|exit|assert)\\b"
+				},
+				{
+					"name": "keyword.operator.ions",
+					"match": "\\b(dup|2dup|swap|2swap|drop|2drop|over|2over|rot|2rot|rot5|2rot5|ctt\\d+|min|max|here|chere|iota|reset|not)\\b"
+				},
+				{
+					"name": "keyword.operator.ions",
+					"match": "(?<=\\s|^)(\\.)(?=\\s|$)"
+				},
+				{
+					"name": "storage.modifier.ions",
+					"match": "\\binline\\b"
+				},
+				{
+					"name": "keyword.type.ions",
+					"match": "\\b(bool|uint8|uint16|uint32|uint64|ptr)\\b"
+				},
+				{
+					"name": "storage.type.ions",
+					"match": "\\b(proc|macro|var)\\b"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.numeric.ions",
+					"match": "\\b\\d+\\b"
+				},
+				{
+					"name": "constant.numeric.ions",
+					"match": "\\b0x[0-9a-fA-F]+\\b"
+				},
+				{
+					"name": "constant.numeric.ions",
+					"match": "\\b0b[0-9a-fA-F]+\\b"
+				},
+				{
+					"name": "constant.language.ions",
+					"match": "\\b(true|false)\\b"
+				},
+				{
+					"name": "variable.other.ions",
+					"match": "\\b[_A-Z][_A-Z0-9]*\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.ions",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.ions",
+					"match": "\\\\."
+				}
+			]
+		},
+		"chars": {
+			"name": "string.quoted.single.ions",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.ions",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash",
+					"match": "//.*"
+				},
+				{
+					"name": "comment.block",
+					"begin": "/\\*",
+					"end": "\\*/"
+				}
+			]
+		}
+	},
+	"scopeName": "source.ions"
+}
