@@ -3,7 +3,7 @@
     "displayName": "IonS Highlighter",
     "publisher": "Skulhunter5",
     "description": "Syntax highlighter for IonS",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "engines": {
         "vscode": "^1.63.0"
     },

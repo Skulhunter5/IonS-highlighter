@@ -23,11 +23,15 @@
 			"patterns": [
 				{
 					"name": "keyword.control.ions",
-					"match": "\\b(if|else|else\\*|while|do|break|continue|return|exit|assert|#include)\\b"
+					"match": "\\b(if|else|else\\*|while|do|break|continue|return|exit|assert)\\b"
+				},
+				{
+					"name": "keyword.control.ions",
+					"match": "(?<=\\s|^)(#include)(?=\\s|$)"
 				},
 				{
 					"name": "keyword.operator.ions",
-					"match": "\\b(dup|2dup|swap|2swap|drop|2drop|over|2over|rot|2rot|rot5|2rot5|ctt\\d+|min|max|here|chere|iota|reset|not)\\b"
+					"match": "\\b(dup|2dup|swap|2swap|drop|2drop|over|2over|rot|2rot|rot5|2rot5|ctt\\d+|min|max|here|chere|iota|reset|not|argc|argv)\\b"
 				},
 				{
 					"name": "keyword.operator.ions",
