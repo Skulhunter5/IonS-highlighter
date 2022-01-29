@@ -9,6 +9,9 @@
 			"include": "#constants"
 		},
 		{
+			"include": "#preprocessor_directives"
+		},
+		{
 			"include": "#strings"
 		},
 		{
@@ -26,10 +29,6 @@
 					"match": "\\b(if|else|else\\*|while|do|break|continue|return|exit|assert)\\b"
 				},
 				{
-					"name": "keyword.control.ions",
-					"match": "(?<=\\s|^)(#include)(?=\\s|$)"
-				},
-				{
 					"name": "keyword.operator.ions",
 					"match": "\\b(dup|2dup|swap|2swap|drop|2drop|over|2over|rot|2rot|rot5|2rot5|ctt\\d+|min|max|here|chere|iota|reset|not|argc|argv)\\b"
 				},
@@ -43,11 +42,11 @@
 				},
 				{
 					"name": "keyword.type.ions",
-					"match": "\\b(bool|uint8|uint16|uint32|uint64|ptr)\\b"
+					"match": "\\b(bool|uint|uint64|ptr)\\b"
 				},
 				{
 					"name": "storage.type.ions",
-					"match": "\\b(proc|macro|var)\\b"
+					"match": "\\b(proc|var)\\b"
 				}
 			]
 		},
@@ -72,6 +71,18 @@
 				{
 					"name": "variable.other.ions",
 					"match": "\\b[_A-Z][_A-Z0-9]*(_[a-zA-Z0-9]*)*\\b"
+				}
+			]
+		},
+		"preprocessor_directives": {
+			"patterns": [
+				{
+					"name": "keyword.control.directive.include.ions",
+					"match": "(?<=\\s|^)(#include)(?=\\s|$)"
+				},
+				{
+					"name": "keyword.control.directive.macro.ions",
+					"match": "(?<=\\s|^)(#macro)(?=\\s|$)"
 				}
 			]
 		},
