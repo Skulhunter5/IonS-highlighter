@@ -33,7 +33,7 @@
 				},
 				{
 					"name": "keyword.operator.ions",
-					"match": "\\b(dup|2dup|swap|2swap|drop|2drop|over|2over|rot|2rot|rot5|2rot5|ctt\\d+|min|max|here|chere|iota|reset|not|argc|argv)\\b"
+					"match": "\\b(dup|2dup|swap|2swap|drop|2drop|over|2over|rot|rrot|rot5|rrot5|ctt\\d+|min|max|here|chere|iota|reset|not|argc|argv)\\b"
 				},
 				{
 					"name": "keyword.operator.ions",
@@ -114,6 +114,10 @@
 				{
 					"name": "keyword.operator.ions",
 					"match": "\\b\\.(?=\\s|$)"
+				},
+				{
+					"name": "punctuation.accessor.ions",
+					"match": "(?<=\\s|^)(@|!)(?=[0-9a-zA-Z_-]+(\\s|$))"
 				}
 			]
 		},
