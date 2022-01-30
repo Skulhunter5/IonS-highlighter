@@ -83,6 +83,22 @@
 				{
 					"name": "keyword.control.directive.macro.ions",
 					"match": "(?<=\\s|^)(#macro)(?=\\s|$)"
+				},
+				{
+					"name": "keyword.control.directive.define.ions",
+					"match": "(?<=\\s|^)(#define)(?=\\s|$)"
+				},
+				{
+					"name": "keyword.control.directive.ifdef.ions",
+					"match": "(?<=\\s|^)(#ifdef)(?=\\s|$)"
+				},
+				{
+					"name": "keyword.control.directive.ifndef.ions",
+					"match": "(?<=\\s|^)(#ifndef)(?=\\s|$)"
+				},
+				{
+					"name": "keyword.control.directive.endif.ions",
+					"match": "(?<=\\s|^)(#endif)(?=\\s|$)"
 				}
 			]
 		},
