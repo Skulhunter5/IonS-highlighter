@@ -12,6 +12,9 @@
 			"include": "#preprocessor_directives"
 		},
 		{
+			"include": "#other"
+		},
+		{
 			"include": "#strings"
 		},
 		{
@@ -99,6 +102,14 @@
 				{
 					"name": "keyword.control.directive.endif.ions",
 					"match": "(?<=\\s|^)(#endif)(?=\\s|$)"
+				}
+			]
+		},
+		"other": {
+			"patterns": [
+				{
+					"name": "punctuation.accessor.ions",
+					"match": "\\b\\.\\b"
 				}
 			]
 		},
