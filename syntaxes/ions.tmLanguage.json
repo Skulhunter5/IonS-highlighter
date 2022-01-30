@@ -110,6 +110,10 @@
 				{
 					"name": "punctuation.accessor.ions",
 					"match": "\\b\\.\\b"
+				},
+				{
+					"name": "keyword.operator.ions",
+					"match": "\\b\\.(?=\\s|$)"
 				}
 			]
 		},
