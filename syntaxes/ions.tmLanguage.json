@@ -69,7 +69,7 @@
 				},
 				{
 					"name": "constant.language.ions",
-					"match": "\\b(true|false)\\b"
+					"match": "\\b(true|false|null)\\b"
 				},
 				{
 					"name": "variable.other.ions",
