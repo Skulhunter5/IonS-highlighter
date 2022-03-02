@@ -57,15 +57,15 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.ions",
-					"match": "\\b\\d+\\b"
+					"match": "\\b[0-9_]+\\b"
 				},
 				{
 					"name": "constant.numeric.ions",
-					"match": "\\b0x[0-9a-fA-F]+\\b"
+					"match": "\\b0x[0-9a-fA-F_]+\\b"
 				},
 				{
 					"name": "constant.numeric.ions",
-					"match": "\\b0b[01]+\\b"
+					"match": "\\b0b[01_]+\\b"
 				},
 				{
 					"name": "constant.numeric.ions",
