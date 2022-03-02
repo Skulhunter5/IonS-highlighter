@@ -49,7 +49,7 @@
 				},
 				{
 					"name": "storage.type.ions",
-					"match": "\\b(proc|var)\\b"
+					"match": "\\b(proc|var|struct)\\b"
 				}
 			]
 		},
@@ -65,7 +65,11 @@
 				},
 				{
 					"name": "constant.numeric.ions",
-					"match": "\\b0b[0-9a-fA-F]+\\b"
+					"match": "\\b0b[01]+\\b"
+				},
+				{
+					"name": "constant.numeric.ions",
+					"match": "(?<=\\s|^)(sizeof)(?=\\(\\S+\\)(\\s|$))"
 				},
 				{
 					"name": "constant.language.ions",
