@@ -44,12 +44,12 @@
 					"match": "\\binline\\b"
 				},
 				{
-					"name": "keyword.type.ions",
-					"match": "\\b(bool|uint|uint64|ptr)\\b"
+					"name": "storage.type.ions",
+					"match": "\\b(function|var|struct)\\b"
 				},
 				{
-					"name": "storage.type.ions",
-					"match": "\\b(proc|var|struct)\\b"
+					"name": "keyword.type.ions",
+					"match": "\\b(bool|uint|uint64|ptr|func)\\b"
 				}
 			]
 		},
@@ -121,7 +121,11 @@
 				},
 				{
 					"name": "punctuation.accessor.ions",
-					"match": "(?<=\\s|^)(@|!)(?=[0-9a-zA-Z_-]+(\\s|$))"
+					"match": "(?<=\\s|^)(@|!)(?=[0-9a-zA-Z_-]*(\\s|$))"
+				},
+				{
+					"name": "punctuation.accessor.ions",
+					"match": "(?<=\\s|^)(@|!)(?=(\\s|$))"
 				}
 			]
 		},
