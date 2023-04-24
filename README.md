@@ -2,4 +2,4 @@
 
 ## Features
 
-Adds syntax highlighting for the stackbased programming language [IonS](https://github.com/Skulhunter5/IonS).
+Adds simple syntax highlighting for my stackbased programming language [IonS](https://github.com/Skulhunter5/IonS).
